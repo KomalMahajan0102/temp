@@ -1,0 +1,46 @@
+<% layout("/layouts/boilerplate") %>
+
+
+
+    <div class="row mt-3">
+        <h1 class="col-6 offset-3">SignUp on NotifyNest</h1>
+        <div class="col-6 offset-3">
+
+            <form method="POST" action="/signup" novalidate class="needs-validation">
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input name="email" type="text" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                <label for="dept" class="form-label">Select department</label>
+                <select class="form-select" id="dept" aria-label="Default select example" name="department"
+                    required>
+                    <option value="cs">Computer Engineering</option>
+                    <option value="it">Information Technology</option>
+                    <option value="entc">Electronic and Communication Engineering</option>
+                    <option value="ece">Electronic and Computer Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ce">Civil Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                    <option value="aids">Artificial Intelligence and Data Science</option>
+                    <option value="aiml">Artificial Intelligence and Machine Learning</option>
+                </select>
+            </div>
+                <div class="mb-3">
+                    <label for="classroom-code" class="form-label">classroom code</label>
+                    <input name="classroomCode" type="text" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input name="password" type="text" class="form-control" required />
+                </div>
+
+
+                <button class="btn btn-dark mt-3">SignUp</button>
+
+            </form>
+
+        </div>
+
+    </div>

@@ -1,0 +1,556 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+:root {
+    --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --gradientSupport: -webkit-linear-gradient(0deg,
+            rgb(132 144 255) 0%,
+            rgb(98 189 252) 100%);
+}
+
+body {
+    font-family: 'McLaren', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+
+
+}
+
+.main {
+    flex: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 5%;
+
+
+
+
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+
+}
+
+
+
+.nav-link {
+    color: #222222 !important;
+
+}
+
+.n-links {
+    display: flex;
+    gap: 5px;
+}
+
+
+/*Footer*/
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background: var(--gradientSupport);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+}
+
+.signup {
+    background: var(--gradientSupport);
+    border-radius: 30rem !important;
+}
+
+
+
+/* cards */
+
+.col-row {
+    display: flex;
+    margin: 40px 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.card {
+    width: 22rem !important;
+    margin: 1.5rem 0rem;
+}
+
+.card:hover {
+    background-color: white;
+    opacity: 0.5;
+    transition-duration: 1.5s;
+    color: blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card-img-top {
+
+    width: 90% !important;
+    height: 19rem !important;
+    margin: 0.5rem 0.5rem;
+}
+
+.card-title {
+    text-align: center !important;
+}
+
+/* @media only screen and (max-width: 1200px) {
+   
+   
+    
+  } */
+
+/* 
+Admin Login form */
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+
+
+/* ALL Notice */
+.all-notices {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+   
+    
+
+}
+
+.all-notices .notice-card {
+    width: 100%;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border:0.2rem  solid rgb(132 144 255);
+    border-radius: 10px;
+    border-top: 2rem solid rgb(132 144 255) ;
+
+    padding: 0.3rem;
+
+
+
+}
+
+
+.all-notices .notice-card .notice-card-img{
+    width: 100%;
+    height:70% ;
+    object-fit: cover;
+    object-position: top ;
+
+}
+@media screen and (max-width: 548px)  {
+    .all-notices{
+        width: 100%;
+    }
+    .all-notices .notice-card{
+        height: 22rem;
+       
+    }
+    .all-notices{
+        margin: 0;
+    }
+    .all-notices .notice-card .notice-card-img{
+        height: 50%;
+    }
+}
+
+/* complaints */
+.all-complaints {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+   
+    
+
+}
+
+.all-complaints .complaint-card {
+    width: 100%;
+    min-height: 5rem;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border:0.2rem  solid rgb(132 144 255);
+    border-radius: 10px;
+}
+.all-complaints .complaint-card .complaint-title{
+    background-color: rgb(132 144 255);
+    min-height: 3rem;
+    height: fit-content;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: start;
+}
+.complaint-card-body{
+    padding: 1rem;
+}
+
+@media screen and (max-width: 548px)  {
+    .all-complaints{
+        width: 90%;
+    }
+    /* .all-notices .notice-card{
+        height: 22rem;
+       
+    } */ */
+    .all-complaints{
+        margin: 0;
+    }
+    
+}
+.add-complaint{
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(132 144 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: fixed;
+    right:50px;
+    bottom: 50px;
+    
+    
+
+}
+.add-complaint a{
+    color: #eee;
+    font-size: 3rem;
+}
+.form-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    
+
+}
+.form-main form{
+    width: 50%;
+}
+@media screen and (max-width: 956px) {
+    .form-main form{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .form-main form{
+        width: 90%;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.hero-image {
+    height: 600px;
+    width: 700px;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* @media screen and (max-width: 1200px) {
+    .hero-image{
+        width: 500px;
+        height: 500px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .hero-image{
+        width: 450px;
+        height: 450px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container{
+        max-width: 95%;
+    }
+   
+  
+
+  
+    
+  }
+  .hero{
+    overflow-x: hidden;
+  } */
+@media screen and (max-width: 1272px) {
+    .hero-image {
+        width: 550px;
+        height: 500px;
+    }
+
+    .card {
+        width: 20rem !important;
+        height: 350px !important;
+    }
+}
+
+@media screen and (max-width: 982px) {
+    .hero-image{
+        width: 450px;
+        height: 400px;
+    }
+    .section a{
+        padding: 0.4rem 0.8rem !important;
+        margin: 1rem  !important;
+    }
+}
+@media screen and (max-width: 736px) {
+    .hero-image{
+        width: 450px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 654px) {
+    .hero{
+        flex-wrap: wrap;
+    }
+    .hero-image{
+        width: 95%;
+        height: 18rem;
+    }
+}
+
+/* .dot {
+    height: 50px;
+    width: 50px;
+    background: var(--gradientSupport);
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 18;
+    position: absolute;
+    top:10rem;
+    left: 10rem;
+    animation: GFG 5s infinite linear; 
+        } 
+  
+        @keyframes GFG { 
+            0% { 
+                transform: rotate(0deg)  
+                      translateY(100px) rotate(0deg); 
+            } 
+            30%{
+                transform: 
+                translatex(100px) rotate(180deg); 
+            }
+  
+            100% { 
+                transform: rotate(360deg)  
+                      translateY(-70px) rotate(-360deg); 
+            } 
+        }  */
+
+     
+        
+        .circles{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .circles li{
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background:var(--gradientSupport);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+            
+        }
+        
+        .circles li:nth-child(1){
+            left: 25%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+        }
+        
+        
+        .circles li:nth-child(2){
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+        
+        .circles li:nth-child(3){
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+        
+        .circles li:nth-child(4){
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+        
+        .circles li:nth-child(5){
+            left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+        
+        .circles li:nth-child(6){
+            left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+        
+        .circles li:nth-child(7){
+            left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+        
+        .circles li:nth-child(8){
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+        
+        .circles li:nth-child(9){
+            left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+        
+        .circles li:nth-child(10){
+            left: 85%;
+            width: 50px;
+            height: 50px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+        
+        
+        
+        @keyframes animate {
+        
+            0%{
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+        
+            100%{
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+        
+        }
+
+
+/* //staff  */
+.staff .row{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, 25rem); 
+    
+}
+.staff .row .card{
+    display: flex; flex-direction: column; justify-content: space-around; padding-top: 7px;height: 25rem !important; min-height:fit-content;
+    justify-self: center;
+}
+@media screen and (max-width: 1400px) {
+    .staff .row{
+        grid-template-columns: repeat(auto-fill, 23rem); 
+    }
+}
+@media screen and (max-width: 1235px) {
+    .staff .row{
+        grid-template-columns: repeat(auto-fill, 18rem); 
+    }
+}
